@@ -1,0 +1,29 @@
+{
+  "alertContext": {
+    "label": "Alert level",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Success",
+        "value": "success"
+      },
+      {
+        "label": "Info",
+        "value": "info"
+      },
+      {
+        "label": "Warning",
+        "value": "warning"
+      },
+      {
+        "label": "Danger",
+        "value": "danger"
+      }
+    ]
+  },
+  "dismissable": {
+    "label": "Dismissable",
+    "type": "optional-string",
+    "value": " close=\"toggleAlert()\""
+  }
+}

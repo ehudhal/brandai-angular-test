@@ -1,0 +1,7 @@
+<div ng-app="brandai.example.alert" ng-controller="ExampleAlertController">
+  <alert ng-show="showAlert" type="[[alertType]]"[[dismissable]]>
+    Alert! Here is some explanatory text.
+    <a href="#" class="alert-link">and a link</a>.
+  </alert>
+  <button ng-hide="showAlert" class='btn btn-default' ng-click="toggleAlert()">Show alert again</button>
+</div>
