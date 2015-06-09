@@ -1,0 +1,44 @@
+{
+  "closeOthers": {
+    "label": "Only one group open at once",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  },
+  "firstGroupOpen": {
+    "label": "First group is open by default",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  },
+  "firstGroupDisabled": {
+    "label": "First group is disabled",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  }
+}
