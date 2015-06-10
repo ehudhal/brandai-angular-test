@@ -1,0 +1,51 @@
+{
+  "max": {
+    "label": "Total number of stars",
+    "type": "number",
+    "min": 3,
+    "max": 10,
+    "step": 1
+  },
+  "readonly": {
+    "label": "Read only",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  },
+  "stateOn": {
+    "label": "On icon",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Filled star",
+        "value": ""
+      },
+      {
+        "label": "Filled checkmark",
+        "value": "'glyphicon-ok-sign'"
+      }
+    ]
+  },
+  "stateOff": {
+    "label": "Off icon",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Outlined star",
+        "value": ""
+      },
+      {
+        "label": "Outlined checkmark",
+        "value": "'glyphicon-ok-circle'"
+      }
+    ]
+  }
+}
