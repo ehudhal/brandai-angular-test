@@ -1,0 +1,55 @@
+{
+  "buttonGroupClasses": {
+    "type": "css-class",
+    "staticClasses": ["btn-group"],
+    "optionalClasses": [
+      {
+        "label": "Open direction",
+        "type": "enum",
+        "options": [
+          {
+            "label": "Down",
+            "value": ""
+          },
+          {
+            "label": "Up",
+            "value": "dropup"
+          }
+        ]
+      }
+    ]
+  },
+  "buttonClasses": {
+    "type": "css-class",
+    "staticClasses": ["btn", "btn-default"],
+    "optionalClasses": [
+      {
+        "label": "Button size",
+        "type": "enum",
+        "options": [
+          {
+            "label": "Large",
+            "value": "btn-lg"
+          },
+          {
+            "label": "Default",
+            "value": ""
+          },
+          {
+            "label": "Small",
+            "value": "btn-sm"
+          },
+          {
+            "label": "Extra small",
+            "value": "btn-xs"
+          }
+        ]
+      },
+      {
+        "label": "Disabled",
+        "type": "optional-string",
+        "value": "disabled"
+      }
+    ]
+  }
+}
