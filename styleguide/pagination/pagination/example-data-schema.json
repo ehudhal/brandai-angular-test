@@ -1,0 +1,126 @@
+{
+  "paginationClasses": {
+    "type": "css-class",
+    "staticClasses": ["pagination"],
+    "optionalClasses": [
+      {
+        "label": "Size",
+        "type": "enum",
+        "options": [
+          {
+            "label": "Large",
+            "value": "pagination-lg"
+          },
+          {
+            "label": "Default",
+            "value": ""
+          },
+          {
+            "label": "Small",
+            "value": "pagination-sm"
+          }
+        ]
+      }
+    ]
+  },
+  "boundaryLinks": {
+    "label": "Show first and last buttons",
+    "type": "optional-string",
+    "value": " boundary-links=\"true\""
+  },
+  "directionLinks": {
+    "label": "Hide previous and next buttons",
+    "type": "optional-string",
+    "value": " direction-links=\"false\""
+  },
+  "rotate": {
+    "label": "Do not keep current page in the middle",
+    "type": "optional-string",
+    "value": " rotate=\"false\""
+  },
+  "totalItems": {
+    "label": "Total items",
+    "type": "number",
+    "min": 10,
+    "max": 100,
+    "step": 10
+  },
+  "itemsPerPage": {
+    "label": "Items per page",
+    "type": "number",
+    "min": 5,
+    "max": 30,
+    "step": 5 
+  },
+  "maxSize": {
+    "label": "Maximum pages shown",
+    "type": "number",
+    "min": 5,
+    "max": 30,
+    "step": 5 
+  },
+  "previousText": {
+    "label": "Previous label",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Previous",
+        "value": ""
+      },
+      {
+        "label": "‹",
+        "value": "&lsaquo;"
+      },
+      {
+        "label": "←",
+        "value": "&larr;"
+      }
+    ]
+  },
+  "nextText": {
+    "label": "Next label",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Next",
+        "value": ""
+      },
+      {
+        "label": "›",
+        "value": "&rsaquo;"
+      },
+      {
+        "label": "→",
+        "value": "&rarr;"
+      }
+    ]
+  },
+  "firstText": {
+    "label": "First label",
+    "type": "enum",
+    "options": [
+      {
+        "label": "First",
+        "value": ""
+      },
+      {
+        "label": "«",
+        "value": "&laquo;"
+      }
+    ]
+  },
+  "lastText": {
+    "label": "Last label",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Last",
+        "value": ""
+      },
+      {
+        "label": "»",
+        "value": "&raquo;"
+      }
+    ]
+  }
+}
