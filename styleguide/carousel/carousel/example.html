@@ -1,6 +1,6 @@
 <div ng-app="brandai.example.carousel" ng-controller="ExampleCarouselController">
   <div style="height: 304px">
-    <carousel interval="5000">
+    <carousel interval="[[interval]]">
       <slide ng-repeat="slide in slides" active="slide.active">
         <img ng-src="{{slide.image}}" style="margin:auto;">
         <div class="carousel-caption">

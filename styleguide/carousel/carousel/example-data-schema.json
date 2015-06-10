@@ -1,0 +1,9 @@
+{
+  "interval": {
+    "label": "Time between slides (ms)",
+    "type": "number",
+    "min": 1000,
+    "max": 15000,
+    "step": 1000
+  }
+}
