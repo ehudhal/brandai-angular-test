@@ -1,0 +1,44 @@
+ {
+  "previousText": {
+    "label": "Previous label",
+    "type": "enum",
+    "options": [
+      {
+        "label": "« Previous",
+        "value": ""
+      },
+      {
+        "label": "← Older",
+        "value": "← Older"
+      }
+    ]
+  },
+  "nextText": {
+    "label": "Next label",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Next »",
+        "value": ""
+      },
+      {
+        "label": "Newer →",
+        "value": "Newer →"
+      }
+    ]
+  },
+  "align": {
+    "label": "Align to sides of page",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  }
+}
