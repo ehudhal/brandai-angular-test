@@ -1,0 +1,64 @@
+{
+  "progressClasses" : {
+    "type": "css-class",
+    "optionalClasses": [
+      {
+        "label" : "Striped",
+        "type" : "optional-string",
+        "value" : "progress-bar-striped"
+      },
+      {
+        "label" : "Animate stripes",
+        "type" : "optional-string",
+        "value" : "active"
+      }
+    ]
+  },
+  "percent": {
+    "label": "%",
+    "type" : "number",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1
+  },
+  "type": {
+    "label": "Context",
+    "type" : "enum",
+    "options": [
+      {
+        "label" : "None",
+        "value" : ""
+      },
+      {
+        "label" : "Success",
+        "value" : "success"
+      },
+      {
+        "label" : "Info",
+        "value" : "info"
+      },
+      {
+        "label" : "Warning",
+        "value" : "warning"
+      },
+      {
+        "label" : "Danger",
+        "value" : "danger"
+      }
+    ]
+  },
+  "animate": {
+    "label": "Animate transitions",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  }
+}
