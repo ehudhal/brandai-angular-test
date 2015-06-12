@@ -1,0 +1,112 @@
+{
+  "bar1Classes" : {
+    "type": "css-class",
+    "optionalClasses": [
+      {
+        "label" : "Bar 1 Striped",
+        "type" : "optional-string",
+        "value" : "progress-bar-striped"
+      },
+      {
+        "label" : "Bar 1 Animated",
+        "type" : "optional-string",
+        "value" : "active"
+      }
+    ]
+  },
+  "bar2Classes" : {
+    "type": "css-class",
+    "optionalClasses": [
+      {
+        "label" : "Bar 2 Striped",
+        "type" : "optional-string",
+        "value" : "progress-bar-striped"
+      },
+      {
+        "label" : "Bar 2 Animated",
+        "type" : "optional-string",
+        "value" : "active"
+      }
+    ]
+  },
+  "bar1Type": {
+    "label": "Bar 1 Context",
+    "type" : "enum",
+    "options": [
+      {
+        "label" : "None",
+        "value" : ""
+      },
+      {
+        "label" : "Success",
+        "value" : "success"
+      },
+      {
+        "label" : "Info",
+        "value" : "info"
+      },
+      {
+        "label" : "Warning",
+        "value" : "warning"
+      },
+      {
+        "label" : "Danger",
+        "value" : "danger"
+      }
+    ]
+  },
+  "bar2Type": {
+    "label": "Bar 2 Context",
+    "type" : "enum",
+    "options": [
+      {
+        "label" : "None",
+        "value" : ""
+      },
+      {
+        "label" : "Success",
+        "value" : "success"
+      },
+      {
+        "label" : "Info",
+        "value" : "info"
+      },
+      {
+        "label" : "Warning",
+        "value" : "warning"
+      },
+      {
+        "label" : "Danger",
+        "value" : "danger"
+      }
+    ]
+  },
+  "bar1Percent": {
+    "label": "Bar 1 %",
+    "type" : "number",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1
+  },
+  "bar2Percent": {
+    "label": "Bar 2 %",
+    "type" : "number",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1
+  },
+  "animate": {
+    "label": "Animate transitions",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  }
+}
