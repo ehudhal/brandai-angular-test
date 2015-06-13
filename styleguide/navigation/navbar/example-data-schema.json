@@ -1,0 +1,66 @@
+{
+  "navbarClasses": {
+    "type": "css-class",
+    "staticClasses": ["navbar", "navbar-default"],
+    "optionalClasses": [
+      {
+        "label": "Style",
+        "type": "enum",
+        "options": [
+          {
+            "label": "Default",
+            "value": "navbar-default"
+          },
+          {
+            "label": "Inverse",
+            "value": "navbar-inverse"
+          }
+        ]
+      },
+      {
+        "label": "Placement",
+        "type": "enum",
+        "options": [
+          {
+            "label": "Default",
+            "value": ""
+          },
+          {
+            "label": "Fixed to top",
+            "value": "navbar-fixed-top"
+          },
+          {
+            "label": "Fixed to bottom",
+            "value": "navbar-fixed-bottom"
+          },
+          {
+            "label": "Static top",
+            "value": "navbar-static-top"
+          }
+        ]
+      }
+    ]
+  },
+  "textClasses": {
+    "type": "css-class",
+    "staticClasses": ["navbar-text"],
+    "optionalClasses": [
+      {
+        "label": "Right align free text",
+        "type": "optional-string",
+        "value": "navbar-right"
+      }
+    ]
+  },
+  "menuClasses": {
+    "type": "css-class",
+    "staticClasses": ["nav", "navbar-nav"],
+    "optionalClasses": [
+      {
+        "label": "Right align menu",
+        "type": "optional-string",
+        "value": "navbar-right"
+      }
+    ]
+  }
+}
