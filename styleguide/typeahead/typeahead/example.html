@@ -1,0 +1,4 @@
+<div ng-app="brandai.example.typeahead" ng-controller="ExampleTypeaheadController">
+  <pre>State: {{selected | json}}</pre>
+  <input type="text" ng-model="selected" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control">
+</div>
