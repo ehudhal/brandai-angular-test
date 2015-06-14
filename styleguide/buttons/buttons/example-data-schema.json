@@ -16,6 +16,10 @@
             "value": "btn-primary"
           },
           {
+            "label": "Success",
+            "value": "btn-success"
+          },
+          {
             "label": "Info",
             "value": "btn-info"
           },
