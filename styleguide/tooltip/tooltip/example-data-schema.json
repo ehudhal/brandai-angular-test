@@ -1,0 +1,68 @@
+{
+  "placement": {
+    "label": "Tooltip placement",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Left",
+        "value": "left"
+      },
+      {
+        "label": "Top",
+        "value": "top"
+      },
+      {
+        "label": "Bottom",
+        "value": "bottom"
+      },
+      {
+        "label": "Right",
+        "value": "right"
+      }
+    ]
+  },
+  "animation": {
+    "label": "Animate",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Yes",
+        "value": "true"
+      },
+      {
+        "label": "No",
+        "value": "false"
+      }
+    ]
+  },
+  "trigger": {
+    "label": "Trigger",
+    "type": "enum",
+    "options": [
+      {
+        "label": "Click",
+        "value": ""
+      },
+      {
+        "label": "Mouse enter",
+        "value": "mouseenter"
+      },
+      {
+        "label": "Focus",
+        "value": "focus"
+      }
+    ]
+  },
+  "delay": {
+    "label": "Delay before open (ms)",
+    "type": "number",
+    "min": 0,
+    "max": 3000,
+    "step": 100
+  },
+  "disable": {
+    "label": "Disable",
+    "type": "optional-string",
+    "value": " tooltip-enable=\"false\""
+  }
+}
