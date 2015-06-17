@@ -40,12 +40,12 @@
     "type": "enum",
     "options": [
       {
-        "label": "Click",
-        "value": ""
-      },
-      {
         "label": "Mouse enter",
         "value": "mouseenter"
+      },
+      {
+        "label": "Click",
+        "value": "click"
       },
       {
         "label": "Focus",
