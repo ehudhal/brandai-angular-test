@@ -1,4 +1,26 @@
 {
+  "sections": {
+    "label": "Tag name",
+    "type": "section-toggle",
+    "values": [
+      {
+        "label": "Link",
+        "value": "a"
+      },
+      {
+        "label": "Button",
+        "value": "button"
+      },
+      {
+        "label": "Button input",
+        "value": "buttonInput"
+      },
+      {
+        "label": "Submit input",
+        "value": "submitInput"
+      }
+    ]
+  },
   "buttonClasses": {
     "type": "css-class",
     "staticClasses": ["btn"],
