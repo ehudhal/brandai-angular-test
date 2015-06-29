@@ -110,5 +110,19 @@
         "value": "false"
       }
     ]
+  },
+  "sections": {
+    "label": "Method of labeling",
+    "type": "section-toggle",
+    "values": [
+      {
+        "label": "Only for screen readers",
+        "value": "default"
+      },
+      {
+        "label": "Visually",
+        "value": "label"
+      }
+    ]
   }
 }
