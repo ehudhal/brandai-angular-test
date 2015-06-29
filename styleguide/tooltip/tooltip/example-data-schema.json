@@ -64,5 +64,23 @@
     "label": "Disable",
     "type": "optional-string",
     "value": " tooltip-enable=\"false\""
+  },
+  "method": {
+    "label": "Method of specifying tooltip",
+    "type": "section-toggle",
+    "values": [
+      {
+        "label": "Text",
+        "value": "default"
+      },
+      {
+        "label": "Unescaped HTML",
+        "value": "unsafe"
+      },
+      {
+        "label": "Template",
+        "value": "template"
+      }
+    ]
   }
 }
