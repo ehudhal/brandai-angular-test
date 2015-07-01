@@ -20,7 +20,7 @@
         "value": {
           "label": "Minute step",
           "type": "select",
-          "options": [
+          "values": [
             "1",
             "5",
             "10",
@@ -73,5 +73,3 @@
     ]
   }
 }
-
-
