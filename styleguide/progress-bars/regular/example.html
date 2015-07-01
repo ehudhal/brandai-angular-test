@@ -1,9 +1,9 @@
 <div ng-app="brandai.example.progressbar" ng-controller="ExampleProgressbarController">
   [[#default]]
-  <progressbar type="[[type]]" max="max" value="percent" animate="[[animate]]"></progressbar>
+  <progressbar [[barAttrs]] max="max" value="percent"></progressbar>
   [[/default]]
   [[#label]]
-  <progressbar type="[[type]]" max="max" value="percent" animate="[[animate]]">
+  <progressbar [[barAttrs]] max="max" value="percent">
     {{percent}}%
   </progressbar>
   [[/label]]

@@ -1,19 +1,4 @@
 {
-  "progressClasses" : {
-    "type": "css-class",
-    "optionalClasses": [
-      {
-        "label" : "Striped",
-        "type" : "optional-string",
-        "value" : "progress-bar-striped"
-      },
-      {
-        "label" : "Animate stripes",
-        "type" : "optional-string",
-        "value" : "active"
-      }
-    ]
-  },
   "percent": {
     "label": "%",
     "type" : "number",
@@ -21,49 +6,70 @@
     "max" : 100,
     "step" : 1
   },
-  "type": {
-    "label": "Context",
-    "type" : "enum",
-    "options": [
+  "barAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label" : "None",
-        "value" : ""
+        "type": "attribute",
+        "key": "class",
+        "value": {
+          "type": "group",
+          "values": [
+            {
+              "label": "Striped",
+              "type": "switch",
+              "on" : "progress-bar-striped"
+            },
+            {
+              "label": "Animate stripes",
+              "type": "switch",
+              "on": "active"
+            }
+          ]
+        }
       },
       {
-        "label" : "Success",
-        "value" : "success"
+        "type": "attribute",
+        "key": "type",
+        "value": {
+          "label": "Context",
+          "type" : "select",
+          "optional": true,
+          "values": [
+            {
+              "label" : "Success",
+              "value" : "success"
+            },
+            {
+              "label" : "Info",
+              "value" : "info"
+            },
+            {
+              "label" : "Warning",
+              "value" : "warning"
+            },
+            {
+              "label" : "Danger",
+              "value" : "danger"
+            }
+          ]
+        }
       },
       {
-        "label" : "Info",
-        "value" : "info"
-      },
-      {
-        "label" : "Warning",
-        "value" : "warning"
-      },
-      {
-        "label" : "Danger",
-        "value" : "danger"
-      }
-    ]
-  },
-  "animate": {
-    "label": "Animate transitions",
-    "type": "enum",
-    "options": [
-      {
-        "label": "Yes",
-        "value": "true"
-      },
-      {
-        "label": "No",
-        "value": "false"
+        "type": "attribute",
+        "key": "type",
+        "value": {
+          "label": "Animate transitions",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
       }
     ]
   },
   "sections": {
     "label": "Method of labeling",
-    "type": "section-toggle",
+    "type": "section-switch",
     "values": [
       {
         "label": "Only for screen readers",
