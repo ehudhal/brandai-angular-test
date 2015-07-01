@@ -1,26 +1,43 @@
 {
-  "type": {
-    "label": "Tab style",
-    "type": "enum",
-    "options": [
+  "tabsetAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Tabs",
-        "value": "tabs"
+        "type": "attribute",
+        "key": "type",
+        "value": {
+          "label": "Tab style",
+          "type": "select",
+          "values": [
+            {
+              "label": "Tabs",
+              "value": "tabs"
+            },
+            {
+              "label": "Pills",
+              "value": "pills"
+            }
+          ]
+        }
       },
       {
-        "label": "Pills",
-        "value": "pills"
+        "type": "attribute",
+        "key": "vertical",
+        "value": {
+          "label": "Stacked",
+          "type": "switch",
+          "on": "true"
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "justified",
+        "value": {
+          "label": "Justified",
+          "type": "switch",
+          "on": "true"
+        }
       }
     ]
-  },
-  "vertical": {
-    "label": "Stacked",
-    "type": "optional-string",
-    "value": " vertical=\"true\""
-  },
-  "justified": {
-    "label": "Justified",
-    "type": "optional-string",
-    "value": " justified=\"true\""
   }
 }
