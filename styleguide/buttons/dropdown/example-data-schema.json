@@ -1,65 +1,75 @@
 {
   "buttonGroupClasses": {
-    "type": "css-class",
-    "staticClasses": ["btn-group"],
-    "optionalClasses": [
-      {
-        "label": "Open direction",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Down",
-            "value": ""
-          },
-          {
-            "label": "Up",
-            "value": "dropup"
-          }
-        ]
-      }
-    ]
+    "type": "attribute",
+    "key": "class",
+    "value": {
+      "type": "group",
+      "values": [
+        {
+          "type": "const",
+          "value": "btn-group"
+        },
+        {
+          "label": "Open upward",
+          "type": "switch",
+          "on": "dropup"
+        }
+      ]
+    }
   },
   "buttonClasses": {
-    "type": "css-class",
-    "staticClasses": ["btn", "btn-default", "dropdown-toggle"],
-    "optionalClasses": [
-      {
-        "label": "Button size",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Large",
-            "value": "btn-lg"
-          },
-          {
-            "label": "Default",
-            "value": ""
-          },
-          {
-            "label": "Small",
-            "value": "btn-sm"
-          },
-          {
-            "label": "Extra small",
-            "value": "btn-xs"
-          }
-        ]
-      },
-      {
-        "label": "Disabled",
-        "type": "optional-string",
-        "value": "disabled"
-      },
-      {
-        "label": "Active",
-        "type": "optional-string",
-        "value": "active"
-      },
-      {
-        "label": "Block level",
-        "type": "optional-string",
-        "value": "btn-block"
-      }
-    ]
+    "type": "attribute",
+    "key": "class",
+    "value": {
+      "type": "group",
+      "values": [
+        {
+          "type": "const",
+          "value": "btn"
+        },
+        {
+          "type": "const",
+          "value": "btn-default"
+        },
+        {
+          "type": "const",
+          "value": "dropdown-toggle"
+        },
+        {
+          "label": "Button size",
+          "type": "select",
+          "optional": true,
+          "values": [
+            {
+              "label": "Large",
+              "value": "btn-lg"
+            },
+            {
+              "label": "Small",
+              "value": "btn-sm"
+            },
+            {
+              "label": "Extra small",
+              "value": "btn-xs"
+            }
+          ]
+        },
+        {
+          "label": "Disabled",
+          "type": "switch",
+          "value": "disabled"
+        },
+        {
+          "label": "Active",
+          "type": "switch",
+          "value": "active"
+        },
+        {
+          "label": "Block level",
+          "type": "switch",
+          "value": "btn-block"
+        }
+      ]
+    }
   }
 }
