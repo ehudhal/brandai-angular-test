@@ -1,87 +1,123 @@
 {
   "buttonGroupClasses": {
-    "type": "css-class",
-    "staticClasses": ["btn-group"],
-    "optionalClasses": [
-      {
-        "label": "Open direction",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Down",
-            "value": ""
-          },
-          {
-            "label": "Up",
-            "value": "dropup"
-          }
-        ]
-      }
-    ]
+    "type": "attribute",
+    "key": "class",
+    "value": {
+      "type": "group",
+      "values": [
+        {
+          "type": "const",
+          "value": "btn-group"
+        },
+        {
+          "label": "Open upward",
+          "type": "switch",
+          "on": "dropup"
+        }
+      ]
+    }
   },
-  "buttonClasses": {
-    "type": "css-class",
-    "staticClasses": ["btn", "btn-default"],
-    "optionalClasses": [
+  "buttonAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Button size",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Large",
-            "value": "btn-lg"
-          },
-          {
-            "label": "Default",
-            "value": ""
-          },
-          {
-            "label": "Small",
-            "value": "btn-sm"
-          },
-          {
-            "label": "Extra small",
-            "value": "btn-xs"
-          }
-        ]
+        "type": "attribute",
+        "key": "class",
+        "value": {
+          "type": "group",
+          "values": [
+            {
+              "type": "const",
+              "value": "btn"
+            },
+            {
+              "type": "const",
+              "value": "btn-default"
+            },
+            {
+              "label": "Button size",
+              "type": "select",
+              "optional": true,
+              "values": [
+                {
+                  "label": "Large",
+                  "value": "btn-lg"
+                },
+                {
+                  "label": "Small",
+                  "value": "btn-sm"
+                },
+                {
+                  "label": "Extra small",
+                  "value": "btn-xs"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
-        "label": "Disabled",
-        "type": "optional-string",
-        "value": "disabled"
+        "type": "attribute",
+        "key": "ng-disabled",
+        "value": {
+          "label": "Disabled",
+          "type": "switch",
+          "on": "true"
+        }
       }
     ]
-  },
-  "toggleClasses": {
-    "type": "css-class",
-    "staticClasses": ["btn", "btn-default", "dropdown-toggle"],
-    "optionalClasses": [
+  }
+  "toggleAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Button size",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Large",
-            "value": "btn-lg"
-          },
-          {
-            "label": "Default",
-            "value": ""
-          },
-          {
-            "label": "Small",
-            "value": "btn-sm"
-          },
-          {
-            "label": "Extra small",
-            "value": "btn-xs"
-          }
-        ]
+        "type": "attribute",
+        "key": "class",
+        "value": {
+          "type": "group",
+          "values": [
+            {
+              "type": "const",
+              "value": "btn"
+            },
+            {
+              "type": "const",
+              "value": "btn-default"
+            },
+            {
+              "type": "const",
+              "value": "dropdown-toggle"
+            },
+            {
+              "label": "Button size",
+              "type": "select",
+              "optional": true,
+              "values": [
+                {
+                  "label": "Large",
+                  "value": "btn-lg"
+                },
+                {
+                  "label": "Small",
+                  "value": "btn-sm"
+                },
+                {
+                  "label": "Extra small",
+                  "value": "btn-xs"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
-        "label": "Disabled",
-        "type": "optional-string",
-        "value": "disabled"
+        "type": "attribute",
+        "key": "ng-disabled",
+        "value": {
+          "label": "Disabled",
+          "type": "switch",
+          "on": "true"
+        }
       }
     ]
   }
