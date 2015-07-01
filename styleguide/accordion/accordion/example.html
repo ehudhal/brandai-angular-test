@@ -1,6 +1,6 @@
 <div ng-app="brandai.example.accordion" ng-controller="ExampleAccordionController">
-  <accordion close-others="[[closeOthers]]">
-    <accordion-group heading="Static Header, initially expanded" is-open="[[firstGroupOpen]]" is-disabled="[[firstGroupDisabled]]">
+  <accordion [[closeOthers]]>
+    <accordion-group [[firstGroupAttrs]] heading="Static Header">
       This is the content of the first group.
     </accordion-group>
     <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
