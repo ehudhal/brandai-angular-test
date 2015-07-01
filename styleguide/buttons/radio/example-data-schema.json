@@ -1,70 +1,79 @@
 {
-  "buttonClasses": {
-    "type": "css-class",
-    "staticClasses": ["btn"],
-    "optionalClasses": [
+  "buttonAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Button style",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Default",
-            "value": "btn-default"
-          },
-          {
-            "label": "Primary",
-            "value": "btn-primary"
-          },
-          {
-            "label": "Info",
-            "value": "btn-info"
-          },
-          {
-            "label": "Warning",
-            "value": "btn-warning"
-          },
-          {
-            "label": "Danger",
-            "value": "btn-danger"
-          },
-          {
-            "label": "Link",
-            "value": "btn-link"
-          }
-        ]
+        "type": "attribute",
+        "key": "class",
+        "value": {
+          "type": "group",
+          "values": [
+            {
+              "type": "const",
+              "value": "btn"
+            },
+            {
+              "label": "Button style",
+              "type": "select",
+              "values": [
+                {
+                  "label": "Default",
+                  "value": "btn-default"
+                },
+                {
+                  "label": "Primary",
+                  "value": "btn-primary"
+                },
+                {
+                  "label": "Info",
+                  "value": "btn-info"
+                },
+                {
+                  "label": "Warning",
+                  "value": "btn-warning"
+                },
+                {
+                  "label": "Danger",
+                  "value": "btn-danger"
+                },
+                {
+                  "label": "Link",
+                  "value": "btn-link"
+                }
+              ]
+            },
+            {
+              "label": "Button size",
+              "type": "select",
+              "optional": true,
+              "values": [
+                {
+                  "label": "Large",
+                  "value": "btn-lg"
+                },
+                {
+                  "label": "Small",
+                  "value": "btn-sm"
+                },
+                {
+                  "label": "Extra small",
+                  "value": "btn-xs"
+                }
+              ]
+            },
+            {
+              "label": "Disabled",
+              "type": "switch",
+              "on": "disabled"
+            }
+          ]
+        }
       },
       {
-        "label": "Button size",
-        "type": "enum",
-        "options": [
-          {
-            "label": "Large",
-            "value": "btn-lg"
-          },
-          {
-            "label": "Default",
-            "value": ""
-          },
-          {
-            "label": "Small",
-            "value": "btn-sm"
-          },
-          {
-            "label": "Extra small",
-            "value": "btn-xs"
-          }
-        ]
-      },
-      {
-        "label": "Disabled",
-        "type": "optional-string",
-        "value": "disabled"
+        "label": "Can be set to no selection",
+        "type": "switch",
+        "value": "uncheckable"
       }
     ]
-  },
-  "uncheckable": {
-    "label": "Can be set to no selection",
-    "type": "optional-string",
-    "value": " uncheckable"
   }
 }
