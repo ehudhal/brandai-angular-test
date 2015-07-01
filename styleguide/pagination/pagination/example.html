@@ -1,4 +1,4 @@
 <div ng-app="brandai.example.pagination" ng-controller="ExamplePaginationController">
   <pre>Current page: {{currentPage}}</pre>
-  <pagination[[paginationClasses]][[boundaryLinks]][[directionLinks]][[rotate]] total-items="[[totalItems]]" items-per-page="[[itemsPerPage]]" ng-model="currentPage" max-size="[[maxSize]]" previous-text="[[previousText]]" next-text="[[nextText]]" first-text="[[firstText]]" last-text="[[lastText]]"></pagination>
+  <pagination [[paginationAttrs]] ng-model="currentPage" previous-text="[[previousText]]" next-text="[[nextText]]" first-text="[[firstText]]" last-text="[[lastText]]"></pagination>
 </div>
