@@ -1,8 +1,8 @@
 {
   "placement": {
     "label": "Tooltip placement",
-    "type": "enum",
-    "options": [
+    "type": "select",
+    "values": [
       {
         "label": "Left",
         "value": "left"
@@ -21,53 +21,68 @@
       }
     ]
   },
-  "animation": {
-    "label": "Animate",
-    "type": "enum",
-    "options": [
+  "buttonAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Yes",
-        "value": "true"
+        "type": "attribute",
+        "key": "tooltip-animation",
+        "value": {
+          "label": "Animate",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
       },
       {
-        "label": "No",
-        "value": "false"
+        "type": "attribute",
+        "key": "tooltip-trigger",
+        "value": {
+          "label": "Trigger",
+          "type": "select",
+          "values": [
+            {
+              "label": "Mouse Enter",
+              "value": "mouseenter"
+            },
+            {
+              "label": "Click",
+              "value": "click"
+            },
+            {
+              "label": "Focus",
+              "value": "focus"
+            }
+          ]
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "tooltip-popup-delay",
+        "value": {
+          "label": "Delay before open (ms)",
+          "type": "number",
+          "min": 0,
+          "max": 3000,
+          "step": 100,
+          "default": 0
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "tooltip-enable",
+        "value": {
+          "label": "Enabled",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
       }
     ]
-  },
-  "trigger": {
-    "label": "Trigger",
-    "type": "enum",
-    "options": [
-      {
-        "label": "Mouse enter",
-        "value": "mouseenter"
-      },
-      {
-        "label": "Click",
-        "value": "click"
-      },
-      {
-        "label": "Focus",
-        "value": "focus"
-      }
-    ]
-  },
-  "delay": {
-    "label": "Delay before open (ms)",
-    "type": "number",
-    "min": 0,
-    "max": 3000,
-    "step": 100
-  },
-  "disable": {
-    "label": "Disable",
-    "type": "optional-string",
-    "value": " tooltip-enable=\"false\""
   },
   "method": {
     "label": "Method of specifying tooltip",
-    "type": "section-toggle",
+    "type": "section-switch",
     "values": [
       {
         "label": "Text",

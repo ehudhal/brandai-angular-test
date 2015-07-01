@@ -1,16 +1,16 @@
 <div ng-app="brandai.example.tooltip" ng-controller="ExampleTooltipController">
   [[#default]]
-  <button class="btn btn-default" tooltip="Tooltip on the [[placement]]" tooltip-placement="[[placement]]" tooltip-animation="[[animation]]" tooltip-popup-delay="[[delay]]" tooltip-trigger="[[trigger]]"[[disable]]>Tooltip on the [[placement]]</button>
+  <button class="btn btn-default" tooltip="Tooltip on the [[placement]]" [[buttonAttrs]]>Tooltip on the [[placement]]</button>
   [[/default]]
 
   [[#template]]
   <script type="text/ng-template" id="myTooltipTemplate.html">
     <span>Special Tooltip with <strong>markup</strong> and {{ dynamicTooltipText }}</span>
   </script>
-  <button class="btn btn-default" tooltip-template="myTooltipTemplate.html" tooltip-placement="[[placement]]" tooltip-animation="[[animation]]" tooltip-popup-delay="[[delay]]" tooltip-trigger="[[trigger]]"[[disable]]>Tooltip on the [[placement]]</button>
+  <button class="btn btn-default" tooltip-template="myTooltipTemplate.html" [[buttonAttrs]]>Tooltip on the [[placement]]</button>
   [[/template]]
 
   [[#unsafe]]
-  <button class="btn btn-default" tooltip-html-unsafe="Content with <em>html</em> <strong>tags</strong>" tooltip-placement="[[placement]]" tooltip-animation="[[animation]]" tooltip-popup-delay="[[delay]]" tooltip-trigger="[[trigger]]"[[disable]]>Tooltip on the [[placement]]</button>
+  <button class="btn btn-default" tooltip-html-unsafe="Content with <em>html</em> <strong>tags</strong>" [[buttonAttrs]]>Tooltip on the [[placement]]</button>
   [[/unsafe]]
 </div>
