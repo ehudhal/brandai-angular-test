@@ -1,16 +1,9 @@
 {
   "animate": {
     "label": "Animate modal open",
-    "type": "enum",
-    "options": [
-      {
-        "label": "Yes",
-        "value": "true"
-      },
-      {
-        "label": "No",
-        "value": "false"
-      }
-    ]
+    "type": "switch",
+    "on": "true",
+    "off": "false",
+    "default": "on"
   }
 }
