@@ -1,8 +1,8 @@
 {
   "placement": {
     "label": "Popover placement",
-    "type": "enum",
-    "options": [
+    "type": "select",
+    "values": [
       {
         "label": "Left",
         "value": "left"
@@ -21,48 +21,63 @@
       }
     ]
   },
-  "animation": {
-    "label": "Animate",
-    "type": "enum",
-    "options": [
+
+  "buttonAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Yes",
-        "value": "true"
+        "type": "attribute",
+        "key": "popover-animation",
+        "value": {
+          "label": "Animate",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
       },
       {
-        "label": "No",
-        "value": "false"
+        "type": "attribute",
+        "key": "popover-trigger",
+        "value": {
+          "label": "Trigger",
+          "type": "select",
+          "values": [
+            {
+              "label": "Click",
+              "value": ""
+            },
+            {
+              "label": "Mouse enter",
+              "value": "mouseenter"
+            },
+            {
+              "label": "Focus",
+              "value": "focus"
+            }
+          ]
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "popover-popup-delay",
+        "value": {
+          "label": "Delay before open (ms)",
+          "type": "number",
+          "min": 0,
+          "max": 3000,
+          "step": 100,
+          "default": 0
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "popover-title",
+        "value": {
+          "label": "Show title",
+          "type": "switch",
+          "on": "Title"
+        }
       }
     ]
-  },
-  "trigger": {
-    "label": "Trigger",
-    "type": "enum",
-    "options": [
-      {
-        "label": "Click",
-        "value": ""
-      },
-      {
-        "label": "Mouse enter",
-        "value": "mouseenter"
-      },
-      {
-        "label": "Focus",
-        "value": "focus"
-      }
-    ]
-  },
-  "delay": {
-    "label": "Delay before open (ms)",
-    "type": "number",
-    "min": 0,
-    "max": 3000,
-    "step": 100
-  },
-  "title": {
-    "label": "Title in popover",
-    "type": "optional-string",
-    "value": " popover-title=\"Title\""
   }
 }

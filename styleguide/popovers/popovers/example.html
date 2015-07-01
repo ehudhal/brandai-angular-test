@@ -1,5 +1,5 @@
 <div ng-app="brandai.example.popover" ng-controller="ExamplePopoverController">
-  <button class="btn btn-default"[[title]] popover="And here’s some amazing content. It’s very engaging. Right?" popover-placement="[[placement]]" popover-animation="[[animation]]" popover-popup-delay="[[delay]]" popover-trigger="[[trigger]]">
+  <button [[buttonAttrs]] popover-placement="[[placement]]" class="btn btn-default" popover="And here’s some amazing content. It’s very engaging. Right?">
     Popover on [[placement]]
   </button>
 </div>
