@@ -1,43 +1,30 @@
- {
-  "previousText": {
-    "label": "Previous label",
-    "type": "enum",
-    "options": [
-      {
-        "label": "« Previous",
-        "value": ""
-      },
-      {
-        "label": "← Older",
-        "value": "← Older"
-      }
-    ]
-  },
-  "nextText": {
-    "label": "Next label",
-    "type": "enum",
-    "options": [
-      {
-        "label": "Next »",
-        "value": ""
-      },
-      {
-        "label": "Newer →",
-        "value": "Newer →"
-      }
-    ]
-  },
+{
   "align": {
-    "label": "Align to sides of page",
-    "type": "enum",
-    "options": [
+    "type": "attribute",
+    "key": "align",
+    "value": {
+      "label": "Align to sides of page",
+      "type": "switch",
+      "off": "false",
+      "default": "on"
+    }
+  },
+  "labels": {
+    "type": "linked-select",
+    "values": [
       {
-        "label": "Yes",
-        "value": "true"
+        "label": "« Previous / Next »",
+        "values": {
+          "previousText": "",
+          "nextText": ""
+        }
       },
       {
-        "label": "No",
-        "value": "false"
+        "label": "← Older / Newer →",
+        "values": {
+          "previousText": "← Older",
+          "nextText": "Newer →"
+        }
       }
     ]
   }
