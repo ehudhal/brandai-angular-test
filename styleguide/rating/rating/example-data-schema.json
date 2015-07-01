@@ -1,51 +1,46 @@
 {
-  "max": {
-    "label": "Total number of stars",
-    "type": "number",
-    "min": 3,
-    "max": 10,
-    "step": 1,
-    "default": 5
-  },
-  "readonly": {
-    "label": "Read only",
-    "type": "enum",
-    "options": [
+  "ratingAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "Yes",
-        "value": "true"
+        "type": "attribute",
+        "key": "max",
+        "value": {
+          "label": "Total number of stars",
+          "type": "number",
+          "min": 3,
+          "max": 10,
+          "step": 1,
+          "default": 5
+        }
       },
       {
-        "label": "No",
-        "value": "false"
+        "type": "attribute",
+        "key": "max",
+        "value": {
+          "label": "Read only",
+          "type": "switch",
+          "on": "true"
+        }
       }
     ]
   },
-  "stateOn": {
-    "label": "On icon",
-    "type": "enum",
-    "options": [
+  "icons": {
+    "type": "linked-select",
+    "values": [
       {
-        "label": "Filled star",
-        "value": ""
+        "label": "Star",
+        "values": {
+          "stateOn": "",
+          "stateOff": ""
+        }
       },
       {
-        "label": "Filled checkmark",
-        "value": "'glyphicon-ok-sign'"
-      }
-    ]
-  },
-  "stateOff": {
-    "label": "Off icon",
-    "type": "enum",
-    "options": [
-      {
-        "label": "Outlined star",
-        "value": ""
-      },
-      {
-        "label": "Outlined checkmark",
-        "value": "'glyphicon-ok-circle'"
+        "label": "Checkmark",
+        "values": {
+          "stateOn": "'glyphicon-ok-sign'",
+          "stateOff": "'glyphicon-ok-circle'"
+        }
       }
     ]
   }

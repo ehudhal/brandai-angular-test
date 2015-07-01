@@ -1,7 +1,7 @@
 <div ng-app="brandai.example.rating" ng-controller="ExampleRatingController">
   <pre>Current value: {{rating}}; Hovering over: {{overStar || "none"}}</pre>
 
-  <rating ng-model="rating" max="[[max]]" readonly="[[readonly]]" state-on="[[stateOn]]" state-off="[[stateOff]]" on-hover="overStar = value" on-leave="overStar = null"></rating>
+  <rating ng-model="rating" [[ratingAttrs]] state-on="[[stateOn]]" state-off="[[stateOff]]" on-hover="overStar = value" on-leave="overStar = null"></rating>
 
-  <button class="btn btn-default" ng-click="rating = 0" ng-disabled="[[readonly]]">Clear</button>
+  <button class="btn btn-default" ng-click="rating = 0">Clear</button>
 </div>
