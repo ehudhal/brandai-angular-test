@@ -1,16 +1,16 @@
 <div ng-app="brandai.example.progressbar" ng-controller="ExampleStackedProgressbarController">
   [[#default]]
-  <progress max="max" animate="[[animate]]">
-    <bar value="bar1Percent" type="[[bar1Type]]"></bar>
-    <bar value="bar2Percent" type="[[bar2Type]]"></bar>
+  <progress max="max" [[animate]]>
+    <bar [[bar1Attrs] value="bar1Percent"></bar>
+    <bar [[bar2Attrs] value="bar2Percent"></bar>
   </progress>
   [[/default]]
   [[#label]]
-  <progress max="max" animate="[[animate]]">
-    <bar value="bar1Percent" type="[[bar1Type]]">
+  <progress max="max" [[animate]]>
+    <bar [[bar1Attrs]] value="bar1Percent">
       <span ng-hide="bar1Percent < 5">{{bar1Percent}}%</span>
     </bar>
-    <bar value="bar2Percent" type="[[bar2Type]]">
+    <bar [[bar2Attrs]] value="bar2Percent">
       <span ng-hide="bar2Percent < 5">{{bar2Percent}}%</span>
     </bar>
   </progress>
