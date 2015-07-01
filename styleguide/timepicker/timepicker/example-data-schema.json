@@ -1,51 +1,77 @@
 {
-  "hourStep": {
-    "label": "Hour step",
-    "type": "number",
-    "min": 1,
-    "max": 3,
-    "step": 1
-  },
-  "minStep": {
-    "label": "Minute step",
-    "type": "enum",
-    "options": [
-      "1",
-      "5",
-      "10",
-      "15",
-      "20",
-      "25",
-      "30"
-    ]
-  },
-  "showMeridian": {
-    "label": "12 or 24 hour",
-    "type": "enum",
-    "options": [
+  "timepickerAttrs": {
+    "type": "group",
+    "values": [
       {
-        "label": "12 hour",
-        "value": "true"
+        "type": "attribute",
+        "key": "hour-step",
+        "value": {
+          "label": "Hour step",
+          "type": "number",
+          "min": 1,
+          "max": 3,
+          "step": 1,
+          "default": 1
+        }
       },
       {
-        "label": "24 hour",
-        "value": "false"
+        "type": "attribute",
+        "key": "minute-step",
+        "value": {
+          "label": "Minute step",
+          "type": "select",
+          "options": [
+            "1",
+            "5",
+            "10",
+            "15",
+            "20",
+            "25",
+            "30"
+          ]
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "show-meridian",
+        "value": {
+          "label": "Show meridian",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "readonly-input",
+        "value": {
+          "label": "Read only",
+          "type": "switch",
+          "on": "true"
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "mousewheel",
+        "value": {
+          "label": "Enable mouse wheel",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
+      },
+      {
+        "type": "attribute",
+        "key": "arrowkeys",
+        "value": {
+          "label": "Enable arrow keys",
+          "type": "switch",
+          "off": "false",
+          "default": "on"
+        }
       }
     ]
-  },
-  "readonly": {
-    "label": "Read only",
-    "type": "optional-string",
-    "value": " readonly-input=\"true\""
-  },
-  "mousewheel": {
-    "label": "Enable arrow keys",
-    "type": "optional-string",
-    "value": " mousewheel=\"true\""
-  },
-  "arrowkeys": {
-    "label": "Enable mousewheel",
-    "type": "optional-string",
-    "value": " arrowkeys=\"true\""
   }
 }
+
+

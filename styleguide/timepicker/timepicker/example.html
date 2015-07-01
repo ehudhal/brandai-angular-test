@@ -2,7 +2,7 @@
 
   <pre>Time is: {{time}}</pre>
 
-  <timepicker ng-model="time" ng-change="changed()" hour-step="[[hourStep]]" minute-step="[[minStep]]" show-meridian="[[showMeridian]]"[[readonly]][[mousewheel]][[arrowkeys]]></timepicker>
+  <timepicker [[timepickerAttrs]] ng-model="time" ng-change="changed()"></timepicker>
 
   <button class="btn btn-default" ng-click="clear()">Clear</button>
 
