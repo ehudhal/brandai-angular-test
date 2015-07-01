@@ -21,7 +21,7 @@
               "on" : "progress-bar-striped"
             },
             {
-              "label": "Animate stripes",
+              "label": "Animate Stripes",
               "type": "switch",
               "on": "active"
             }
@@ -59,7 +59,7 @@
         "type": "attribute",
         "key": "type",
         "value": {
-          "label": "Animate transitions",
+          "label": "Animate Transitions",
           "type": "switch",
           "off": "false",
           "default": "on"
@@ -68,11 +68,11 @@
     ]
   },
   "sections": {
-    "label": "Method of labeling",
+    "label": "Method of Labeling",
     "type": "section-switch",
     "values": [
       {
-        "label": "Only for screen readers",
+        "label": "Only for Screen Readers",
         "value": "default"
       },
       {
