@@ -72,7 +72,7 @@
       {
         "label": "Can be set to no selection",
         "type": "switch",
-        "value": "uncheckable"
+        "on": "uncheckable"
       }
     ]
   }

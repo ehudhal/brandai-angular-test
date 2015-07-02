@@ -57,17 +57,17 @@
         {
           "label": "Disabled",
           "type": "switch",
-          "value": "disabled"
+          "on": "disabled"
         },
         {
           "label": "Active",
           "type": "switch",
-          "value": "active"
+          "on": "active"
         },
         {
           "label": "Block level",
           "type": "switch",
-          "value": "btn-block"
+          "on": "btn-block"
         }
       ]
     }
