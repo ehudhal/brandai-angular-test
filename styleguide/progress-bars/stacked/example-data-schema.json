@@ -112,7 +112,7 @@
   },
   "sections": {
     "label": "Method of labeling",
-    "type": "section-switch",
+    "type": "section-select",
     "values": [
       {
         "label": "Only for screen readers",

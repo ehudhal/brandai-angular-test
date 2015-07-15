@@ -1,7 +1,7 @@
 {
   "sections": {
     "label": "Tag name",
-    "type": "section-switch",
+    "type": "section-select",
     "values": [
       {
         "label": "Link",
