@@ -82,11 +82,11 @@
   },
   "method": {
     "label": "Method of specifying tooltip",
-    "type": "section-switch",
+    "type": "section-select",
     "values": [
       {
         "label": "Text",
-        "value": "default"
+        "value": "standard"
       },
       {
         "label": "Unescaped HTML",

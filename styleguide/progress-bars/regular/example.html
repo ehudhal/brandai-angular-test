@@ -1,10 +1,10 @@
 <div ng-app="brandai.example.progressbar" ng-controller="ExampleProgressbarController">
-  [[#default]]
+  {% if standard %}
   <progressbar [[barAttrs]] max="max" value="percent"></progressbar>
-  [[/default]]
-  [[#label]]
+  {% endif %}
+  {% if label %}
   <progressbar [[barAttrs]] max="max" value="percent">
     {{percent}}%
   </progressbar>
-  [[/label]]
+  {% endif %}
 </div>

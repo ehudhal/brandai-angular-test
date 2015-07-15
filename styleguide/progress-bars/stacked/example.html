@@ -1,11 +1,11 @@
 <div ng-app="brandai.example.progressbar" ng-controller="ExampleStackedProgressbarController">
-  [[#default]]
+  {% if standard %}
   <progress max="max" [[animate]]>
     <bar [[bar1Attrs] value="bar1Percent"></bar>
     <bar [[bar2Attrs] value="bar2Percent"></bar>
   </progress>
-  [[/default]]
-  [[#label]]
+  {% endif %}
+  {% if label %}
   <progress max="max" [[animate]]>
     <bar [[bar1Attrs]] value="bar1Percent">
       <span ng-hide="bar1Percent < 5">{{bar1Percent}}%</span>
@@ -14,5 +14,5 @@
       <span ng-hide="bar2Percent < 5">{{bar2Percent}}%</span>
     </bar>
   </progress>
-  [[/label]]
+  {% endif %}
 </div>

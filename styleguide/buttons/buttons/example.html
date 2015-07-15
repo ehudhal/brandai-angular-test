@@ -1,15 +1,15 @@
-[[#a]]
+{% if button %}
 <a [[buttonClasses]] href="#" role="button">Link</a>
-[[/a]]
+{% endif %}
 
-[[#button]]
+{% if button %}
 <button [[buttonClasses]] type="submit">Button</button>
-[[/button]]
+{% endif %}
 
-[[#buttonInput]]
+{% if buttonInput %}
 <input [[buttonClasses]] type="button" value="Input">
-[[/buttonInput]]
+{% endif %}
 
-[[#submitInput]]
+{% if submitInput %}
 <input [[buttonClasses]] type="submit" value="Submit">
-[[/submitInput]]
+{% endif %}

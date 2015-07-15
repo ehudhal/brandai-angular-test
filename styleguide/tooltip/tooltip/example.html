@@ -1,16 +1,16 @@
 <div ng-app="brandai.example.tooltip" ng-controller="ExampleTooltipController">
-  [[#default]]
+  {% if standard %}
   <button class="btn btn-default" tooltip="Tooltip on the [[placement]]" [[buttonAttrs]]>Tooltip on the [[placement]]</button>
-  [[/default]]
+  {% endif %}
 
-  [[#template]]
+  {% if template %}
   <script type="text/ng-template" id="myTooltipTemplate.html">
     <span>Special Tooltip with <strong>markup</strong> and {{ dynamicTooltipText }}</span>
   </script>
   <button class="btn btn-default" tooltip-template="myTooltipTemplate.html" [[buttonAttrs]]>Tooltip on the [[placement]]</button>
-  [[/template]]
+  {% endif %}
 
-  [[#unsafe]]
+  {% if unsafe %}
   <button class="btn btn-default" tooltip-html-unsafe="Content with <em>html</em> <strong>tags</strong>" [[buttonAttrs]]>Tooltip on the [[placement]]</button>
-  [[/unsafe]]
+  {% endif %}
 </div>

@@ -73,7 +73,7 @@
     "values": [
       {
         "label": "Only for Screen Readers",
-        "value": "default"
+        "value": "standard"
       },
       {
         "label": "Visually",
