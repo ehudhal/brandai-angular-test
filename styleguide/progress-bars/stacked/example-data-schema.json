@@ -123,5 +123,19 @@
         "value": "label"
       }
     ]
+  },
+  "bar1Percent": {
+    "label": "%",
+    "type" : "number",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1
+  },
+  "bar2Percent": {
+    "label": "%",
+    "type" : "number",
+    "min" : 0,
+    "max" : 100,
+    "step" : 1
   }
 }
